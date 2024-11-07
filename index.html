@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="#"><img src="image/logo.png" alt="Company Logo"></a>
+        </div>               
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html" class="quote-btn">Get a Quote</a>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+<!-- Optional Script for Mobile Toggle -->
+<script>
+    document.getElementById("hamburger").onclick = function() {
+        document.getElementById("nav-menu").classList.toggle("active");
+    };
+</script>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        
+    </div>
+</section>
+
+
+<!-- About Us Section -->
+<section class="about-us" id="about-us">
+    <div class="about-content">
+        <div class="about-text">
+            <h2>About CA Technologies</h2>
+            <p>We are a leading software development company dedicated to transforming how businesses manage their workforce. At CA Technologies, we believe in leveraging technology to enhance productivity, security, and efficiency for organizations worldwide.</p>
+            
+            <div class="about-details">
+                <div class="mission">
+                    <h3>Our Mission</h3>
+                    <p>Our mission is to empower businesses with innovative software solutions that streamline HR and employee management processes.</p>
+                </div>
+                <div class="values">
+                    <h3>Our Values</h3>
+                    <p>Integrity, innovation, and a commitment to client success drive everything we do. We build products that make a meaningful impact.</p>
+                </div>
+                <div class="product">
+                    <h3>What Makes Us Unique</h3>
+                    <p>Our flagship product, <strong>SUM SOFTWARE</strong>, is an advanced HR management system with biometric integration for tracking employee attendance, a fully customized payroll system, and more.</p>
+                </div>
+            </div>
+            
+            <a href="#quote" class="cta-btn">Get a Quote</a>
+        </div>
+        <div class="about-image">
+            <img src="image/advance-hr.jpg" alt="CA Technologies Office">
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services" id="services">
+    <h2>Our Services</h2>
+
+    <!-- SUM SOFTWARE Service -->
+    <div class="service-item sum-software">
+        <div class="service-image">
+            <img src="image/sum-software-dashboard.jpeg" alt="SUM Software">
+        </div>
+        <div class="service-content">
+            <h3>SUM SOFTWARE</h3>
+            <p>An advanced HR and employee management system with biometric integration for tracking attendance, a fully customized payroll system, and comprehensive employee management tools.</p>
+        </div>
+    </div>
+
+    <!-- Custom Software Development Service -->
+    <div class="service-item custom-software">
+        <div class="service-image">
+            <img src="image/hero-image.jpg" alt="Custom Software Development">
+        </div>
+        <div class="service-content">
+            <h3>Custom Software Development</h3>
+            <p>Tailored software solutions to meet the specific needs of your business, from initial concept to full deployment.</p>
+        </div>
+    </div>
+
+    <!-- IT Consulting Service -->
+    <div class="service-item it-consulting">
+        <div class="service-image">
+            <img src="image/consulting.jpg" alt="IT Consulting">
+        </div>
+        <div class="service-content">
+            <h3>IT Consulting</h3>
+            <p>Expert advice on technology strategies, infrastructure design, and operational improvements to ensure your business stays ahead.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="why-choose-us" id="why-choose-us">
+    <div class="why-content">
+        <div class="why-text">
+            <h2>Why Choose CA Technologies?</h2>
+            <p>We are committed to providing forward-thinking software solutions that drive business success. Here’s what sets us apart in the industry.</p>
+            
+            <div class="why-details">
+                <div class="reason">
+                    <h3>Industry Expertise</h3>
+                    <p>With deep expertise in software development, our team is well-equipped to deliver solutions that meet industry standards and exceed expectations.</p>
+                </div>
+                <div class="reason">
+                    <h3>Innovation-Driven Solutions</h3>
+                    <p>We are dedicated to developing innovative, robust, and scalable software that evolves with your business needs.</p>
+                </div>
+                <div class="reason">
+                    <h3>Customer-Centric Approach</h3>
+                    <p>Our process revolves around understanding your unique needs and delivering solutions tailored to achieve your goals.</p>
+                </div>
+                <div class="reason">
+                    <h3>Reliable Support</h3>
+                    <p>Our commitment to excellent support ensures a seamless experience from initial consultation to ongoing maintenance.</p>
+                </div>
+            </div>
+        </div>
+        <div class="why-image">
+            <img src="image/Innovation-software.jpg" alt="Why Choose Us - CA Technologies">
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Us Section -->
+<section class="contact-us">
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>Have any questions or want to get in touch? We'd love to hear from you!</p>
+        
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <p><strong>Email:</strong> info@casumsoftware.com </p>
+            <p><strong>Phone:</strong> +231 88 658 8281 </p>
+            <p><strong>Address:</strong> Sinkor, Monrovia, Liberia </p>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Logo and Tagline -->
+        <div class="footer-logo">
+            <h2>CA Technologies</h2>
+            <p>Your trusted partner in innovative software solutions.</p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-social">
+            <h3>Connect with Us</h3>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Credits -->
+    <div class="footer-credits">
+        <p>&copy; 2024 CA Technologies. All rights reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>

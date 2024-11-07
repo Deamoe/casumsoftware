@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header</title>
+    <link rel="stylesheet" href="portfolio.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="#"><img src="image/logo.png" alt="Company Logo"></a>
+        </div>               
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html" class="quote-btn">Get a Quote</a>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+<!-- Optional Script for Mobile Toggle -->
+<script>
+    document.getElementById("hamburger").onclick = function() {
+        document.getElementById("nav-menu").classList.toggle("active");
+    };
+</script>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        
+    </div>
+</section>
+
+
+<!-- Portfolio Page Wrapper -->
+<div class="portfolio-page">
+
+    <!-- Featured Project Section -->
+    <section class="featured-project">
+        <h2>Featured Project: Sum Software</h2>
+        <div class="project-content">
+            <div class="project-image">
+                <img src="image/sum-software-dashboard.jpeg" alt="Sum Software Project">
+            </div>
+            <div class="project-description">
+                <h3>Sum Software - Employee & HR Management System</h3>
+                <p>Our Sum Software offers a comprehensive HR solution with biometric integration for employee tracking, a fully customized payroll system, and an intuitive interface. It's designed to enhance employee productivity, simplify payroll processing, and improve overall HR management.</p>
+                <ul class="project-results">
+                    <li>Improved productivity by 30%</li>
+                    <li>Reduced payroll processing time by 50%</li>
+                    <li>Streamlined employee tracking and management</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Breakdown Section -->
+    <section class="problem-solution">
+        <h2>Problem/Solution Breakdown</h2>
+        <div class="problem-solution-content">
+            <div class="problem">
+                <h3>The Problem</h3>
+                <p>The client struggled with inefficient HR processes, employee tracking issues, and payroll errors that impacted overall productivity and employee satisfaction.</p>
+            </div>
+            <div class="solution">
+                <h3>The Solution</h3>
+                <p>We implemented Sum Software, providing a custom HR management system with biometric tracking, automated payroll calculations, and real-time data tracking for more efficient and reliable HR management.</p>
+            </div>
+            <div class="impact">
+                <h3>The Impact</h3>
+                <p>With Sum Software, the client saw a significant reduction in HR processing time, increased employee satisfaction, and a noticeable boost in productivity, helping the company grow with confidence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Served Section -->
+    <section class="industries-served">
+        <h2>Industries Served</h2>
+        <div class="industries-content">
+            <div class="industry">
+                <h3>Finance</h3>
+                <p>Helping financial institutions manage complex payroll and HR processes with seamless integration and security.</p>
+            </div>
+            <div class="industry">
+                <h3>Healthcare</h3>
+                <p>Supporting healthcare facilities in tracking and managing staff with robust scheduling and payroll solutions.</p>
+            </div>
+            <div class="industry">
+                <h3>E-Commerce</h3>
+                <p>Enabling e-commerce businesses to maintain employee productivity and automate payroll for a smooth operation.</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Logo and Tagline -->
+        <div class="footer-logo">
+            <h2>CA Technologies</h2>
+            <p>Your trusted partner in innovative software solutions.</p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-social">
+            <h3>Connect with Us</h3>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Credits -->
+    <div class="footer-credits">
+        <p>&copy; 2024 CA Technologies. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
